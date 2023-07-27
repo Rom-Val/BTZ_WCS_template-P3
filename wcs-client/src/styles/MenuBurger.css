@@ -1,0 +1,109 @@
+.phone-navbar-container {
+    width: 100%;
+    height: 10em;
+    margin-bottom: 5em;
+    padding: 0.5em 1em;
+    background-color: var(--dark-color);
+    border-bottom: 2px solid var(--highlight-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-icon-container {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* GLOBAL MENU BURGER DIV */
+.menu-burger-btn {
+    position: relative;
+    width: 1.7em;
+    height: 1.5em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-burger-btn.closed { /* TO SEE THE 3 BARS */
+    justify-content: space-between;
+}
+.menu-burger-btn.opened { justify-content: center; } /* TO CENTER THE CROSS WHEN MENU IS OPENED */
+
+.menu-burger-btn.opened>span {transition: transform 0.3s ease-in-out;}
+
+/* ROTATING THE BARS TO FORM THE CROSS */
+.menu-burger-btn.opened>span:nth-child(2) { background-color: var(--dark-color); }
+.menu-burger-btn.opened>span:first-child {
+    position: absolute;
+    transform: rotate(45deg);
+}
+.menu-burger-btn.opened>span:last-child {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.menu-burger-bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--lightest-color);
+}
+
+/* DIV OF ALL THE LINKS OF THE MENU */
+.menu-burger-list {
+    position: absolute;
+    width: 15em;
+    height: 17em;
+    right: 0;
+    top: 10em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--dark-color);
+    border-left: 2px solid var(--highlight-color);
+    border-bottom: 2px solid var(--highlight-color);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.menu-burger-list>a {
+    text-decoration: none;
+    color: var(--lightest-color);
+}
+
+.profil-icon,
+.admin-icon {
+    height: 1.8em;
+    width: 1.8em;
+    fill: var(--lightest-color);
+    cursor: pointer;
+}
+
+.menu-burger-list>a:last-child>li {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--highlight-color);
+}
+
+.menu-burger-list>a:hover,
+.menu-burger-list>a.active,
+.menu-icon-container>a.active .profil-icon {
+    color: var(--highlight-color);
+    fill: var(--highlight-color);
+}
+
+
+@media screen and (min-width: 861px) {
+    .phone-navbar-container {display: none;}
+}

@@ -1,0 +1,19 @@
+.home-page {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.home-page>h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: var(--highlight-color);
+}
+.home-page>p {
+    width: 75%;	
+    padding: 1em;
+    text-align: center;
+}

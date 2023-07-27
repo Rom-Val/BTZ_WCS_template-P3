@@ -1,0 +1,43 @@
+.histoire-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.histoire-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.histoire-container>h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 0.1em;
+    margin: 2em 0 1.25em;
+}
+
+.histoire-container>h2>span {
+    background-color: var(--lightest-color);
+    padding: 0 2em;
+    font-family: var(--secondary-title-font);
+}
+
+.histoire-container>p {
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+span.inovin {
+    font-family: var(--main-font);
+    color: var(--wine-color);
+    font-weight: 700;
+}

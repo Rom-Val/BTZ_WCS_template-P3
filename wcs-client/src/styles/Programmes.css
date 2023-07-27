@@ -1,0 +1,84 @@
+.programmes-container {
+    margin-top: 2.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.atelier-card {
+    width: 45%;
+    height: 20em;
+    position: relative;
+    padding: 1em;
+    border: 2px solid var(--light-color) ;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.atelier-card>.card-details {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--dark-color);
+    gap: 0.5em;
+}
+
+
+
+.atelier-card>a {
+    text-decoration: none;
+}
+
+.atelier-card-btn {
+    width: 60%;
+    transform: translate(-50%, 125%);
+    border: none;
+    background-color: var(--wine-color);
+    text-align: center;
+    color: var(--lightest-color);
+    padding: 0.5em 1em;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.atelier-card:hover {
+    border-color: var(--wine-color);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.atelier-card:hover .atelier-card-btn {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.card-details>h3 {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.atelier-price {
+    height: 10%;
+    color: var(--highlight-color);
+    transition: 0.3s ease-out;
+}
+
+.atelier-price>span {
+    text-decoration: line-through;
+    color: var(--dark-color);
+    transition: 0.3s ease-out;
+}
+
+.atelier-description {
+    height: 70%;
+    text-align: center;
+}
+
+.atelier-card:hover .atelier-price {color: var(--wine-color);}
+.atelier-card:hover .atelier-price>span {color: var(--light-color);}

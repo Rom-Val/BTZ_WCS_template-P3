@@ -1,0 +1,115 @@
+.profil-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profil-header {
+    width: 100%;
+    height: 6em;
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profil-header>h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 0.1em;
+    margin: 2em 0 1.25em;
+}
+.profil-header>h2>span {
+    background-color: var(--lightest-color);
+    padding: 0 2em;
+    font-family: var(--secondary-title-font);
+}
+
+.profil-header>button {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: var(--faded-color);
+    background-color: transparent;
+    border-color: var(--light-color);
+}
+.profil-header>button:hover {
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.profil-header>button::before,
+.profil-header>button::after {
+    background-color: transparent;
+}
+
+.options-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.option-container {
+    height: 15em;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.option-container>a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+.option-container>a>.arrow-icon {
+    height: 2.5em;
+    width: 2.5em;
+}
+.option-container>a:hover {
+    color: var(--highlight-color);
+}
+
+.option-container:nth-child(3){
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.signedup-ateliers-list {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.signedup-ateliers-list>li {
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+.signedup-ateliers-list>li>span {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: var(--faded-color);
+}
+
+.more-ateliers-btn {
+    color: var(--faded-color);
+}
+.more-ateliers-btn:hover {
+    color: var(--dark-color);
+}
+
+.logout-btn {
+    margin-top: 2em;
+    align-self: center;
+}

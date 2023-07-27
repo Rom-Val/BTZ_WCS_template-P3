@@ -1,0 +1,41 @@
+.inscription-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-form {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inscription-form>input,
+.inscription-form>select {
+    width: 50%;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.inscription-form>h2 {
+    margin: 1em;
+}
+.inscription-form>h2>span {
+    color: var(--highlight-color);
+}
+.inscription-form>button {
+    width: 15em;
+}
+
+.error-msg { 
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    color: red; 
+}
+.same-pwd {display: none;}

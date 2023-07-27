@@ -1,0 +1,84 @@
+.atelier-crea-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atelier-crea-header {
+    margin: -5em 0 2em 0;
+    width: 100%;
+    height: 25em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.atelier-crea-img {
+    width: 100%;
+    height: 100%;
+}
+
+.atelier-crea-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 90%;
+}
+
+.atelier-crea-header>h1 {
+    position: absolute;
+    top: 50%;
+    color: var(--light-color);
+}
+
+.atelier-crea-page>p {
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.2;
+}
+.atelier-crea-page>h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 0.1em;
+    margin: 2em 0 1.25em;
+}
+
+.atelier-crea-page>h2>span {
+    background-color: var(--lightest-color);
+    padding: 0 2em;
+    font-family: var(--secondary-title-font);
+}
+
+.programme-atelier {
+    margin: 1em 3em 1em 5em;
+    padding: 1em;
+    line-height: 1.2;
+    counter-reset: list-item; 
+}
+
+.programme-atelier>li {
+    position: relative;
+    margin: 1.5em 0;
+    counter-increment: list-item;
+}
+
+.programme-atelier>li::before {
+    content: counter(list-item);
+    display: inline-block;
+    height: 2.625em;
+    width: 2.625em;
+    line-height: 2.435em;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid var(--wine-color);
+    position: absolute;
+    left: -3.625em;
+    top: 50%;
+    transform: translateY(-50%);
+}

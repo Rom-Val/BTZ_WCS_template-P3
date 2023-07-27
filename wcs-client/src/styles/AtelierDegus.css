@@ -1,0 +1,54 @@
+.atelier-degus-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atelier-degus-header {
+    margin: -5em 0 2em 0;
+    width: 100%;
+    height: 25em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.atelier-degus-img {
+    width: 100%;
+    height: 100%;
+}
+
+.atelier-degus-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atelier-degus-header>h1 {
+    position: absolute;
+    top: 50%;
+    color: var(--light-color);
+}
+.atelier-degus-page>p {
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    line-height: 1.2;
+}
+.atelier-degus-page>h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 0.1em;
+    margin: 2em 0 1.25em;
+}
+
+.atelier-degus-page>h2>span {
+    background-color: var(--lightest-color);
+    padding: 0 2em;
+    font-family: var(--secondary-title-font);
+}

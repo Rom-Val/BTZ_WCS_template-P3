@@ -1,0 +1,40 @@
+.vin-container {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.note-container>p:first-child {
+    color: var(--faded-color);
+    font-style: italic;
+}
+.note-finale {
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#note-finale-input {
+    height: 2.5em;
+    width: 2em;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--highlight-color);
+}
+
+#note-finale-input::-webkit-outer-spin-button,
+#note-finale-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.note-finale>span {
+    color: var(--highlight-color);
+}
+
+/* ESSAIE */
+

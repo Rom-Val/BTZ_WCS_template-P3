@@ -1,0 +1,58 @@
+.creation-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.creation-header,
+.creation-container,
+.creation-solution {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.creation-page>h2,
+.creation-header>h2,
+.creation-container>h2,
+.creation-solution>h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 0.1em;
+    margin: 2em 0 1.25em;
+}
+
+.creation-page>h2>span,
+.creation-header>h2>span,
+.creation-container>h2>span, 
+.creation-solution>h2>span {
+    background-color: var(--lightest-color);
+    padding: 0 2em;
+    font-family: var(--secondary-title-font);
+}
+
+.creation-container>h3 {
+    align-self: flex-start;
+    margin: 2em 0 1em 2em;
+    font-weight: 100;
+    color: var(--highlight-color);
+}
+
+.bouteilles-list {
+    width: 60%;
+
+}
+
+.bouteilles-list>li {
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}

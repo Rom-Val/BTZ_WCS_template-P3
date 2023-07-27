@@ -1,0 +1,57 @@
+.navlinks {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    background-color: var(--dark-color);
+}
+.navlinks >a {
+    width: 95%;
+    color: var(--light-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    
+}
+
+.navlinks> a:hover {
+    color: var( --highlight-color);
+}
+
+.logo-container{
+    margin: 1em 0;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-container {
+    position: fixed;
+    height: 100%;
+    width: 12em;
+    text-decoration: none;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.adminApp {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex: 7;
+}
+
+.navlinks >a>.icon {
+    width: 1.2em;
+    height: 1.2em;
+}
